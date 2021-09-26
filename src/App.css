@@ -6,6 +6,7 @@ body{
   background-size: cover;
   margin: 0;
   padding: 0;
+  
 
 }
 
@@ -33,16 +34,21 @@ font-size: 62px;
 line-height: 84px;
 }
 
-.Name-input{
+.Name-input, .Name-input:focus{
   position: absolute;
 width: 691px;
 height: 61px;
 left: 294px;
 top: 347px;
-
+outline: none;
 background: #FFFFFF;
 box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.13);
 border-radius: 92px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 136%;
 }
 
 .btn{
