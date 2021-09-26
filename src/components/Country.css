@@ -2,6 +2,7 @@
 
 .country{
     width: 100%;
+    padding-bottom: 58px;
 }
 
 .country-id{
@@ -10,19 +11,22 @@ font-style: normal;
 font-weight: 900;
 font-size: 25px;
 line-height: 136%;
+margin-left: 47px;
 /* identical to box height, or 34px */
 }
 
 .percentage-bar{
-
+    margin-left: 92px;
 }
 
 .percentage-numeral{
+
+
     font-family: Poppins;
     font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    float: right;
-    text-align: right;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 136%;
+    margin-left: 270px;
     
 }

@@ -112,7 +112,7 @@ color: #FF0000;
 .result-container{
   position: absolute;
   width: 690px;
-  height: 295px;
+  height: fit-content;
   left: 284px;
   top: 318px;
 
@@ -122,6 +122,7 @@ color: #FF0000;
 }
 
 .result-title{
+margin-bottom: 34px;
 width: 137px;
 height: 52px;
 left: 571px;
