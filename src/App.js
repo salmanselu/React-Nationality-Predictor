@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
 let [isApiError, setIsApiError] = useState(false);
+let [searchText, setSearchText] = useState("")
   return (
     <div className="App">
       <div className="Title">
@@ -14,7 +15,7 @@ let [isApiError, setIsApiError] = useState(false);
       </div>
       <div className="Changing-content">
         <div className="input-container">
-          <input type="text" className="Name-input"/>
+          <input type="text" className="Name-input" placeholder="enter a name"/>
           <button className="btn">predict</button>
           {
             isApiError &&
