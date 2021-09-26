@@ -12,6 +12,13 @@ function App() {
               <div>Nationality</div>
             </div>
       </div>
+      <div className="Changing-content">
+        <div className="input-container">
+          <input type="text" className="Name-input"/>
+          <button className="btn">predict</button>
+        </div>
+
+      </div>
     </div>
   );
 }

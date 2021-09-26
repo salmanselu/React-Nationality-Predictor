@@ -32,3 +32,44 @@ font-weight: normal;
 font-size: 62px;
 line-height: 84px;
 }
+
+.Name-input{
+  position: absolute;
+width: 691px;
+height: 61px;
+left: 294px;
+top: 347px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.13);
+border-radius: 92px;
+}
+
+.btn{
+  
+position: absolute;
+width: 96px;
+height: 34px;
+left: 591px;
+top: 465px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+line-height: 136%;
+/* identical to box height, or 34px */
+
+
+color: #FFFFFF;
+
+position: absolute;
+width: 156px;
+height: 53px;
+left: 562px;
+top: 455px;
+
+background: #006F47;
+box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.13);
+border-radius: 92px;
+}
