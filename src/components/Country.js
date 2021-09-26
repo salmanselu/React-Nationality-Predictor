@@ -1,4 +1,4 @@
-
+import './Country.css'
 
 let Country = (props) => {
     return (

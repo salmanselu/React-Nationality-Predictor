@@ -10,7 +10,7 @@ body{
 
 }
 
-.Title-image{
+.title-image{
   position: absolute;
   width: 338px;
   height: 130px;
@@ -20,7 +20,7 @@ body{
   background-size: cover;
 }
 
-.Title-text{
+.title-text{
   position: absolute;
 width: 333px;
 height: 168px;
@@ -131,7 +131,7 @@ margin-right: auto;
 
 font-family: Poppins;
 font-style: normal;
-font-weight: 500;
+font-weight: 900;
 font-size: 38px;
 line-height: 136%;
 /* identical to box height, or 52px */

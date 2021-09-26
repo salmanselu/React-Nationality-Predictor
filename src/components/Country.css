@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.country{
+    width: 100%;
+}
+
+.country-id{
+font-family: Poppins;
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+line-height: 136%;
+/* identical to box height, or 34px */
+}
+
+.percentage-bar{
+
+}
+
+.percentage-numeral{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    float: right;
+    text-align: right;
+    
+}

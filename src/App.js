@@ -8,9 +8,13 @@ let [apiResult, setApiResult] = useState(null);
 let baseUrl = 'https://api.nationalize.io?name=';
 
 let onSubmit = () => {
-  fetch(`${baseUrl}${searchText}`)
-  .then(response=>response.json())
-  .then(data => setApiResult(data));
+  if(searchText !== "")
+    fetch(`${baseUrl}${searchText}`)
+    .then(response=>response.json())
+    .then(data => setApiResult(data));
+
+  else
+    setIsApiError(true);
   console.log(apiResult);
 }
 
@@ -23,14 +27,15 @@ let getText = (event) => {
   return (
     <div className="App">
       <div className="Title">
-            <div className="Title-image"></div>
-            <div className="Title-text">
+            <div className="title-image"></div>
+            <div className="title-text">
               <div>Predict</div>
               <div>Nationality</div>
             </div>
       </div>
       <div className="Changing-content">
-        { apiResult === null &&
+        { 
+        apiResult === null &&
         <div className="input-container">
           <input onChange={getText} type="text" className="Name-input" placeholder="enter a name"/>
           <button onClick={onSubmit} className="btn">predict</button>
