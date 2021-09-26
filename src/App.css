@@ -79,3 +79,32 @@ background: #006F47;
 box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.13);
 border-radius: 92px;
 }
+
+
+.error-container{
+  position: absolute;
+width: 508px;
+height: 104px;
+left: 399px;
+top: 567px;
+
+background: #FFDEDE;
+border-radius: 18px;
+}
+
+.error-message{
+  position: absolute;
+width: 282px;
+height: 34px;
+
+margin: 35px 113px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 136%;
+/* identical to box height, or 34px */
+
+
+color: #FF0000;
+}
