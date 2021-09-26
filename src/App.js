@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import './App.css';
 import Country from './components/Country'
 function App() {
