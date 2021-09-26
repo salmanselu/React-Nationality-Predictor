@@ -17,6 +17,8 @@ margin-left: 47px;
 
 .percentage-bar{
     margin-left: 92px;
+    height: 10px;
+    width: 500px;
 }
 
 .percentage-numeral{
