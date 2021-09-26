@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import TaskCard from './components/TaskCard';
 import './App.css';
 
 function App() {
