@@ -6,3 +6,27 @@ body{
   padding: 0;
 
 }
+
+.Title-image{
+  position: absolute;
+  width: 338px;
+  height: 130px;
+  left: 291px;
+  top: 142px;
+  background: url(./Title.png);
+  background-size: cover;
+}
+
+.Title-text{
+  position: absolute;
+width: 333px;
+height: 168px;
+left: 656px;
+top: 120px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 62px;
+line-height: 84px;
+}
