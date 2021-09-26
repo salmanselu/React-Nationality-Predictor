@@ -1,21 +1,24 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './App.css';
-
+import Country from './components/Country'
 function App() {
 let [isApiError, setIsApiError] = useState(false);
 let [searchText, setSearchText] = useState("");
-let [apiResult, setApiResult] = useState([]);
+let [apiResult, setApiResult] = useState(null);
 let baseUrl = 'https://api.nationalize.io?name=';
 
 let onSubmit = () => {
   fetch(`${baseUrl}${searchText}`)
   .then(response=>response.json())
-  .then(data => console.log(data))
+  .then(data => setApiResult(data));
+  console.log(apiResult);
 }
 
 let getText = (event) => {
   setSearchText(event.target.value);
 }
+
+
 
   return (
     <div className="App">
@@ -36,6 +39,16 @@ let getText = (event) => {
           }
         </div>
 
+        {
+        apiResult !== null &&  
+        <div className="result-container">
+          <div className="result-title">Results</div>
+          {
+            apiResult.country.map(place => {return <Country countryId={place.country_id} percent={place.probability}/>})
+            
+          }
+        </div>
+       }
       </div>
     </div>
   );
