@@ -30,6 +30,7 @@ let getText = (event) => {
             </div>
       </div>
       <div className="Changing-content">
+        { apiResult === null &&
         <div className="input-container">
           <input onChange={getText} type="text" className="Name-input" placeholder="enter a name"/>
           <button onClick={onSubmit} className="btn">predict</button>
@@ -38,7 +39,7 @@ let getText = (event) => {
             <div className="error-container"><span className="error-message">Error! Please try again</span></div>
           }
         </div>
-
+        }
         {
         apiResult !== null &&  
         <div className="result-container">
